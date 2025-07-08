@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Trabalho Uninter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #d3e3f3;
+            padding: 20px;
+            color: #333;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            color: #ff7d7d;
+        }
+
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+
+        img {
+            border-radius: 10px;
+            margin-top: 5px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+            width: 150px;
+            height: auto;
+        }
+
+        table,
+        td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+
+        a.meu-link {
+            display: inline-block;
+            margin-top: 10px;
+            text-decoration: none;
+            color: #1565c0;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        a.meu-link:hover {
+            color: #d50000;
+        }
+
+        button {
+            background-color: #1e88e5;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-right: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #1565c0;
+        }
+
+        #mensagem {
+            margin-top: 15px;
+            font-style: italic;
+            color: #aaa82b;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Wendel Samora dos Santos</h1>
+
+    <p>
+        Me chamo Wendel Samora, cidadão do pequeno estado chamado Espírito Santo.<br>
+        Nascido em Cariacica no dia 12/08/2005, atualmente tenho 19 anos, prestes a completar 20.<br>
+        Tenho como objetivo me tornar um desenvolvedor back-end focado em automação, com uso de APIs, inteligência
+        artificial e outras habilidades que irei descobrir com o tempo.
+    </p>
+
+    <h2>Minhas atividades favoritas são:</h2>
+    <ul>
+        <li>Correr <br><img src="img/atividades/download.jpeg" alt="Pessoa correndo"></li>
+        <li>Musculação <br><img src="img/atividades/download (1).jpeg" alt="Pessoa malhando na academia"></li>
+        <li>Jogar games <br><img src="img/atividades/download (2).jpeg" alt="Controle de videogame"></li>
+    </ul>
+
+    <h3>Países que eu gostaria de conhecer</h3>
+    <table>
+        <tr>
+            <td>Estados Unidos</td>
+            <td><img src="img/paises/download.jpeg" alt="Bandeira dos Estados Unidos"></td>
+        </tr>
+        <tr>
+            <td>Luxemburgo</td>
+            <td><img src="img/paises/download (1).jpeg" alt="Paisagem de Luxemburgo"></td>
+        </tr>
+        <tr>
+            <td>Reino Unido</td>
+            <td><img src="img/paises/download (2).jpeg" alt="Big Ben em Londres"></td>
+        </tr>
+    </table>
+
+    <p>Esse é o site que eu mais gosto de acessar!</p>
+    <a href="https://store.steampowered.com/?l=portuguese" target="_blank" class="meu-link">Clique aqui para visitar</a>
+
+    <h4>Mensagem especial para você!</h4>
+    <button onclick="mostrarMensagem()">Clique aqui para ver sua mensagem!</button>
+    <p id="mensagem"></p>
+
+    <script>
+        function mostrarMensagem() {
+            document.getElementById("mensagem").innerHTML =
+                "Jesus te ama, e saiba que Ele está contigo todos os dias!";
+        }
+    </script>
+</body>
+
+</html>
